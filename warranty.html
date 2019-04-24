@@ -1,0 +1,42 @@
+<?php
+
+    include_once 'includes/dbh.php';
+
+?>
+
+<html>
+<head>
+  <title>warranty</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Warranty Form</h2>
+  <a href="index.php">Home</a>
+
+  <form action="includes/warantyForm.php" method="GET">
+
+   Employee ID:<input type="number" name="employee_id" placeholder="Employee ID"><br>
+   Vehicle Serial Number:<input type="number" name="vehicle_sn" placeholder="Vehicle serial Number"><br>
+
+   Customer ID:<input type="number" name="customer_id" placeholder="Customer ID">
+   Co-signer:<input type="text" name="co_signer" placeholder="Co-Signer"><br>
+
+   <p>Waranty:</p>
+   Waranty ID:<input type="number" name="warantyId" placeholder="Waranty Id"><br>
+
+   Sale date(yyyymmdd):<input type="number" name="sale_date" placeholder="Sale Date">
+
+   <input type="number" name="total_cost" placeholder="Total Cost"><br>
+   Start Date(yyyymmdd):<input type="number" name="start_date" placeholder="Start Date">
+   <input type="number" name="length" placeholder="length per Month"><br>
+
+   <button type="submit" name="button">Submit</button>
+
+
+
+  </form>
+
+</body>
+
+</html>

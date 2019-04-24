@@ -1,0 +1,39 @@
+<?php
+
+    include_once 'includes/dbh.php';
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>queries</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+  <input type="text" name="carModel" placeholder="Model of the car">
+</form>
+<?php
+
+echo "query page"; 
+
+$sql="SELECT sn,model FROM car_warehouse WHERE model="ford";
+$result = mysqli_query($conn , $sql);
+$resultCheck = mysqli_num_rows($result);
+if($resultCheck>0)
+{
+  while ($row = mysqli_fetch_assoc($result))
+  {
+    echo $row['sn'] . "<br>";
+  }
+}
+
+
+?>
+
+</body>
+
+</html>

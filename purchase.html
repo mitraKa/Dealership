@@ -1,0 +1,54 @@
+<?php
+
+    include_once 'includes/dbh.php';
+
+?>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>purchase</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.php">Home Page</a>
+  <h3 style="color:blue">Purchase Form</h3>
+
+  <form action="includes/signup.php" method="GET">
+    Date(yyyymmdd):<input type="number" name="date" placeholder="Date"><br>
+    Locations:<input type="text" name="location" placeholder="Location">
+    Seller/Dealer<input type="text" name="seller" placeholder="Seller/Dealer"><br>
+    Auction?<input type="text" name="auction" placeholder="YES/NO">
+    Dealer_ID:<input type="number" name="dealerId" placeholder="Dealer ID"><br>
+
+    <p>Vehicle:</p>
+    <input type="text" name="serial_number" placeholder="Serial Number"><br>
+    <input type="text" name="make" placeholder="Make">
+    <input type="text" name="model" placeholder="Model">
+    <input type="text" name="year" placeholder="Year">
+    <input type="text" name="color" placeholder="Color"><br>
+
+    <input type="text" name="miles" placeholder="Miles">
+    <input type="text" name="condition" placeholder="Condition">
+    <input type="text" name="bookPrice" placeholder="Book Price">
+    <input type="text" name="pricePaid" placeholder="Price Paid"><br>
+
+    <p>Repair Costs:</p>
+    <input type="text" name="number" placeholder="#">
+    <input type="text" name="problem" placeholder="Problem">
+    <input type="number" name="estCost" placeholder="est Costs">
+    <input type="number" name="actCost" placeholder="Actual Costs"><br>
+
+<p>Sale Form:</p>
+
+    <button type="submit" name="button">Submit</button>
+
+
+  </form>
+
+</body>
+
+</html>

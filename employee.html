@@ -1,0 +1,30 @@
+<?php
+
+    include_once 'includes/dbh.php';
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Create a new employee</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.php">Home Page</a>
+  <h3 style="color:blue">Employee Form</h3>
+
+  <form action="includes/employeeForm.php" method="GET">
+    <input type="number" name="employee_id" placeholder="Employee Id">
+    <input type="text" name="eLastName" placeholder="Last Name">
+    <input type="text" name="eFirstName" placeholder="First Name">
+    <input type="number" name="ePhone" placeholder="Phone Number"><br>
+    <button type="submit" name="button">Submit</button>
+
+  </form>
+
+</body>
+
+</html>

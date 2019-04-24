@@ -1,0 +1,37 @@
+<?php
+
+    include_once 'includes/dbh.php';
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Payment</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.php">Home Page</a>
+  <h3 style="color:blue">Payment Form</h3>
+
+  <form action="includes/saleForm.php" method="GET">
+    Customer ID:<input type="number" name="customer_id" placeholder="Customer ID">
+    Tax ID:<input type="number" name="tax-id" placeholder="TAX ID"><br>
+
+    <p>Payments:</p>
+    payment Date(yyyymmdd)<input type="number" name="pmt_date" placeholder="Payment Date">
+    Paid Date(yyyymmdd)<input type="number" name="paid_date" placeholder="Paid Date">
+    <input type="number" name="amount" placeholder="Amount">
+    <input type="number" name="bank_account" placeholder="Bank Account"><br>
+
+<br>
+
+    <button type="submit" name="button">Submit</button>
+
+  </form>
+
+</body>
+
+</html>

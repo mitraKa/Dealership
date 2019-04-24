@@ -1,0 +1,74 @@
+<?php
+
+    include_once 'includes/dbh.php';
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Sale</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.php">Home Page</a>
+  <h3 style="color:blue">Sales Form</h3>
+
+  <form  action="includes/salesForm.php" method="GET">
+    <p>Sale</p>
+    Date:<input type="number" name="saleDate" placeholder="Sale Date"><br>
+    Total Due:<input type="text" name="totalDue" placeholder="Total Due">
+    Down Payment:<input type="text" name="downPayment" placeholder="Down Payment"><br>
+
+
+    <p>Sales Person:</p>
+    <input type="number" name="employee_id" placeholder="Employee Id"><br>
+
+    <p>Customer:</p>
+    <input type="number" name="customerId" placeholder="Customer Id">
+    <input type="text" name="first" placeholder="First Name">
+    <input type="text" name="last" placeholder="Last Name">
+    <input type="number" name="custmerPhone" placeholder="Phone number">
+    <input type="text" name="customerAddress" placeholder="Address">
+    <input type="text" name="customerCity" placeholder="City">
+    <input type="text" name="customerState" placeholder="State">
+    <input type="text" name="customerZip" placeholder="Zip"><br>
+
+
+    <p>Vehicle</p>
+    <input type="number" name="serial_num" placeholder="Serial Number">
+
+    <p>Employment History:</p>
+    <div>
+    <input type="text" name="employer" placeholder="Employer">
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="supervisor" placeholder="supervisor's Name">
+    <input type="number" name="phone" placeholder="Phone Number">
+    <input type="text" name="address" placeholder="Address">
+    <input type="date" name="start" placeholder="Start Date"><br>
+    </div>
+
+    <input type="text" name="employer1" placeholder="Employer">
+    <input type="text" name="title1" placeholder="Title">
+    <input type="text" name="supervisor1" placeholder="supervisor's Name">
+    <input type="number" name="phone1" placeholder="Phone Number">
+    <input type="text" name="address1" placeholder="Address">
+    <input type="date" name="start1" placeholder="Start Date"><br>
+
+    <input type="text" name="employer2" placeholder="Employer">
+    <input type="text" name="title2" placeholder="Title">
+    <input type="text" name="supervisor2" placeholder="supervisor's Name">
+    <input type="number" name="phone2" placeholder="Phone Number">
+    <input type="text" name="address2" placeholder="Address">
+    <input type="date" name="start2" placeholder="Start Date"><br>
+
+
+    <button type="submit" name="button">Submit</button>
+
+  </form>
+
+</body>
+
+</html>
